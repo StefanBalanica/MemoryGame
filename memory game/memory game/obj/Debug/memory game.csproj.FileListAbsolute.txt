@@ -1,0 +1,42 @@
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.csproj.AssemblyReference.cache
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.csproj.SuggestedBindingRedirects.cache
+D:\github\MemoryGame\memory game\memory game\obj\Debug\MainWindow.g.cs
+D:\github\MemoryGame\memory game\memory game\obj\Debug\App.g.cs
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game_MarkupCompile.cache
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game_MarkupCompile.lref
+D:\github\MemoryGame\memory game\memory game\bin\Debug\memory game.exe.config
+D:\github\MemoryGame\memory game\memory game\bin\Debug\memory game.exe
+D:\github\MemoryGame\memory game\memory game\bin\Debug\memory game.pdb
+D:\github\MemoryGame\memory game\memory game\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\Newtonsoft.Json.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Buffers.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.IO.Pipelines.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Memory.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Numerics.Vectors.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Text.Encodings.Web.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Text.Json.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.ValueTuple.dll
+D:\github\MemoryGame\memory game\memory game\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\Newtonsoft.Json.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Buffers.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.IO.Pipelines.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Memory.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Numerics.Vectors.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Text.Encodings.Web.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Text.Json.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\github\MemoryGame\memory game\memory game\bin\Debug\System.ValueTuple.xml
+D:\github\MemoryGame\memory game\memory game\obj\Debug\MainWindow.baml
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.g.resources
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory_game.Properties.Resources.resources
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.csproj.GenerateResource.cache
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.csproj.CoreCompileInputs.cache
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.csproj.CopyComplete
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.exe
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.pdb
+D:\github\MemoryGame\memory game\memory game\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\github\MemoryGame\memory game\memory game\bin\Debug\Images\lion.jpg
+D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game_Content.g.cs
