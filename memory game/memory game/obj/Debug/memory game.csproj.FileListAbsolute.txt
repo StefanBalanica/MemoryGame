@@ -40,3 +40,5 @@ D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game.pdb
 D:\github\MemoryGame\memory game\memory game\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\github\MemoryGame\memory game\memory game\bin\Debug\Images\lion.jpg
 D:\github\MemoryGame\memory game\memory game\obj\Debug\memory game_Content.g.cs
+D:\github\MemoryGame\memory game\memory game\obj\Debug\PlayWindow.g.cs
+D:\github\MemoryGame\memory game\memory game\obj\Debug\PlayWindow.baml

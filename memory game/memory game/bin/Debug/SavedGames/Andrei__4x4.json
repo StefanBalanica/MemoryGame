@@ -1,0 +1,11 @@
+{
+  "PlayerName": "Andrei",
+  "TimeLeft": 0,
+  "IsTimerRunning": false,
+  "MatchedCards": [],
+  "SelectedCards": [],
+  "GameImages": [],
+  "GridButtonStates": [],
+  "GridSizeRow": 4,
+  "GridSizeCol": 4
+}

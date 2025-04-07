@@ -23,7 +23,7 @@
             </Image>
             <Button x:Name="ButtonNewUser" Content="New User" HorizontalAlignment="Left" Margin="64,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonNewUser_Click"/>
             <Button x:Name="ButtonDeleteUser" Content="Delete User" HorizontalAlignment="Left" Margin="210,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonDeleteUser_Click"/>
-            <Button x:Name="ButtonPlay" Content="Play" HorizontalAlignment="Left" Margin="361,372,0,0" VerticalAlignment="Top" Height="32" Width="75"/>
+            <Button x:Name="ButtonPlay" Content="Play" HorizontalAlignment="Left" Margin="361,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonPlay_Click"/>
             <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="530,372,0,0" VerticalAlignment="Top" Height="32" Width="75"/>
             <Grid x:Name="NewUserGrid" Background="White" Visibility="Hidden">
                 <Label Content="Add New User" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="38" Width="126" FontSize="18"/>
@@ -32,7 +32,6 @@
                 <Button x:Name="SelectImageButton" Content="Select Avatar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="183,231,0,0" Width="100" Height="32" Click="SelectImageButton_Click"/>
                 <Button x:Name="ButtonAddUser" Content="AddUser" HorizontalAlignment="Left" Margin="183,291,0,0" VerticalAlignment="Top" Height="33" Width="115" Click="ButtonAddUser_Click"/>
                 <Image  x:Name="AvatarImage" HorizontalAlignment="Left" Height="178" Margin="377,217,0,0" VerticalAlignment="Top" Width="197"/>
-
             </Grid>
         </Grid>
     </Grid>

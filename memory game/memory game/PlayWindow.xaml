@@ -1,0 +1,171 @@
+﻿<Window x:Class="memory_game.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:memory_game" d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Title="PlayWindow" Height="450" Width="800"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+         WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Window.Resources>
+    <Grid>
+
+        <Grid x:Name="Meniuprincipal" Visibility="Visible" Panel.ZIndex="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="133*"/>
+            </Grid.ColumnDefinitions>
+            <Menu VerticalAlignment="Top" Grid.ColumnSpan="2">
+                <MenuItem Header="File">
+                    <MenuItem Header="Category" Name="CategoryMenuItem">
+                        <MenuItem Header="Category 1" Name="Category1MenuItem" Click="Category_Click"/>
+                        <MenuItem Header="Category 2" Name="Category2MenuItem" Click="Category_Click"/>
+                        <MenuItem Header="Category 3" Name="Category3MenuItem" Click="Category_Click"/>
+                    </MenuItem>
+                    <MenuItem Header="New Game" Click="NewGame_Click"/>
+                    <MenuItem Header="Open Game" x:Name="OpenGameMenuItem" Loaded="OpenGameMenuItem_Loaded"/>
+                    <MenuItem Header="Save Game" Click="SaveGame_Click"/>
+                    <MenuItem Header="Statistics" Click="Statistics_Click"/>
+                    <MenuItem Header="Exit" Click="Exit_Click"/>
+                </MenuItem>
+                <MenuItem Header="Options">
+                    <MenuItem Header="Standard (4x4)" Click="StandardGame_Click"/>
+                    <MenuItem Header="Custom">
+                        <MenuItem Header="2x3" Click="CustomGame_Click"/>
+                        <MenuItem Header="2x4" Click="CustomGame_Click"/>
+                        <MenuItem Header="2x5" Click="CustomGame_Click"/>
+                        <MenuItem Header="2x6" Click="CustomGame_Click"/>
+                        <MenuItem Header="3x4" Click="CustomGame_Click"/>
+                        <MenuItem Header="3x6" Click="CustomGame_Click"/>
+                        <MenuItem Header="4x6" Click="CustomGame_Click"/>
+                        <MenuItem Header="6x6" Click="CustomGame_Click"/>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Help">
+                    <MenuItem Header="About" Click="About_Click"/>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Rând pentru timer și buton -->
+                <RowDefinition Height="*"/>
+                <!-- Rând pentru GameGrid -->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="PlayerNameTimerGrid" Grid.Row="0" Margin="10" HorizontalAlignment="Center" Visibility="Hidden">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1" Grid.ColumnSpan="3" 
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Name="Timer" Content="Timer" 
+               FontSize="22" FontWeight="Bold" 
+               Visibility="Visible" Margin="5"/>
+
+                        <Label Name="TimerLabel" Content="00:00" 
+               FontSize="22" FontWeight="Bold" 
+               Visibility="Visible" Margin="5"/>
+                    </StackPanel>
+
+                    <!-- Butonul sub cele două label-uri -->
+                    <Button Name="ButtonPause" Content="Pause" 
+            FontSize="22" FontWeight="Bold" 
+            Visibility="Visible" Margin="5"
+            Click="ButtonPause_Click"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Image Width="100" Height="100" Margin="0,10,0,5">
+                        <Image.Source>
+                            <Binding Path="SelectedPlayer.AvatarPath" 
+                     UpdateSourceTrigger="PropertyChanged"
+                     Converter="{StaticResource ImagePathConverter}" />
+                        </Image.Source>
+                    </Image>
+                    <TextBlock Text="{Binding SelectedPlayer.Name}" 
+               FontSize="16" 
+               FontWeight="Bold" 
+               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="GameGrid" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </Grid>
+
+
+        <Grid x:Name="Dificulty" Visibility="Hidden" Background="White" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" Margin="50,20,0,0"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" TextAlignment="Center">
+            <Run Text="Easy Level: " />
+             <LineBreak/>
+                <Run Text="You have "/>
+                 <LineBreak/>
+            <Bold>
+                <Run Text="5 minutes" />
+            </Bold>
+            </TextBlock>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="10,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" TextAlignment="Center">
+            <Run Text="Medium Level: " />
+             <LineBreak/>
+                <Run Text="You have "/>
+                 <LineBreak/>
+            <Bold>
+                <Run Text="3 minutes" />
+            </Bold>
+            </TextBlock>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center" Margin="10,20,50,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" TextAlignment="Center">
+            <Run Text="Hard Level: " />
+             <LineBreak/>
+                <Run Text="You have "/>
+                 <LineBreak/>
+            <Bold>
+                <Run Text="1 minutes" />
+            </Bold>
+            </TextBlock>
+            <Button Grid.Column="0" Content="Easy" HorizontalAlignment="Center" Margin="50,150,0,0" VerticalAlignment="Top" Height="37" Width="84" Click="ButtonDificulty_Click"/>
+            <Button Grid.Column="1" Content="Medium" HorizontalAlignment="Center" Margin="10,150,0,0" VerticalAlignment="Top" Height="37" Width="84" Click="ButtonDificulty_Click"/>
+            <Button Grid.Column="2" Content="Hard" HorizontalAlignment="Center" Margin="10,150,50,0" VerticalAlignment="Top" Height="37" Width="84" Click="ButtonDificulty_Click"/>
+            <Label Grid.Column="2" Content="" Margin="0,200,0,0"/>
+        </Grid>
+        <DataGrid Name="StatisticGrid" Visibility="Hidden" ItemsSource="{Binding Players}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0, 20, 250, 10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nume" Binding="{Binding Name}" Width="auto" />
+                <DataGridTextColumn Header="Meciuri jucate" Binding="{Binding MatchPlayed}" Width="auto" />
+                <DataGridTextColumn Header="Meciuri câștigate" Binding="{Binding Score}" Width="auto" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

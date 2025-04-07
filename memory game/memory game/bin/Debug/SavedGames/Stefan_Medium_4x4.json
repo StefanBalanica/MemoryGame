@@ -1,0 +1,48 @@
+{
+  "PlayerName": "Stefan",
+  "TimeLeft": 172,
+  "IsTimerRunning": false,
+  "MatchedCards": [
+    13,
+    10
+  ],
+  "SelectedCards": [],
+  "GameImages": [
+    "GameImages\\porc.jpg",
+    "GameImages\\maimuta.jpg",
+    "GameImages\\ras.jpg",
+    "GameImages\\Girafa.jpg",
+    "GameImages\\cameleon.jpg",
+    "GameImages\\maimuta.jpg",
+    "GameImages\\tigru.jpg",
+    "GameImages\\Pisica.jpg",
+    "GameImages\\porc.jpg",
+    "GameImages\\Girafa.jpg",
+    "GameImages\\veverita.jpg",
+    "GameImages\\tigru.jpg",
+    "GameImages\\cameleon.jpg",
+    "GameImages\\veverita.jpg",
+    "GameImages\\Pisica.jpg",
+    "GameImages\\ras.jpg"
+  ],
+  "GridButtonStates": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "",
+    ""
+  ],
+  "GridSizeRow": 4,
+  "GridSizeCol": 4
+}

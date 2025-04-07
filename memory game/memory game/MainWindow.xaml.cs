@@ -49,7 +49,7 @@ namespace memory_game
                 return;
             }
 
-            var newPlayer = new Player(playerName, 0, selectedImagePath);
+            var newPlayer = new Player(playerName, 0, 0,selectedImagePath);
             viewModel.Players.Add(newPlayer);
             viewModel.SavePlayers();
             NewUserGrid.Visibility=Visibility.Hidden;
@@ -64,31 +64,23 @@ namespace memory_game
 
             if (openFileDialog.ShowDialog() == true)
             {
-                // Obține calea fișierului selectat
                 string selectedFilePath = openFileDialog.FileName;
 
-                // Creează calea pentru a salva fișierul în folderul Images
                 string imagesDirectory = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "Images");
 
-                // Asigură-te că folderul Images există
                 if (!Directory.Exists(imagesDirectory))
                 {
                     Directory.CreateDirectory(imagesDirectory);
                 }
 
-                // Extrage numele fișierului din calea completă
                 string fileName = System.IO.Path.GetFileName(selectedFilePath);
 
-                // Calea completă a fișierului salvat în folderul Images
                 string savedFilePath = System.IO.Path.Combine(imagesDirectory, fileName);
 
-                // Copiază fișierul în folderul Images
-                File.Copy(selectedFilePath, savedFilePath, true);  // true pentru a suprascrie fișierele existente
+                File.Copy(selectedFilePath, savedFilePath, true);
 
-                // Actualizează calea imaginii pentru a fi afișată
                 selectedImagePath = savedFilePath;
 
-                // Actualizează imaginea afișată pe interfață
                 AvatarImage.Source = new BitmapImage(new Uri(savedFilePath));
             }
         }
@@ -97,6 +89,20 @@ namespace memory_game
         {
             viewModel.DeletePlayer();
 
+        }
+
+        private void ButtonPlay_Click(object sender, RoutedEventArgs e)
+        {
+            // Verificăm dacă există un jucător selectat
+            if (viewModel.SelectedPlayer == null)
+            {
+                MessageBox.Show("Please select a player before starting the game.");
+                return;
+            }
+
+            // Dacă există un jucător selectat, deschidem fereastra de joc
+            PlayWindow playWindow = new PlayWindow(viewModel, viewModel.SelectedPlayer); // Transmit jucătorul selectat
+            playWindow.Show(); // Folosește Show() pentru a deschide fereastra
         }
     }
     }
