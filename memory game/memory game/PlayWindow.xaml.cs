@@ -313,12 +313,10 @@ namespace memory_game
 
         private void CustomGame_Click(object sender, RoutedEventArgs e)
         {
-            // Obținem elementul MenuItem
             MenuItem menuItem = sender as MenuItem;
 
             if (menuItem != null)
             {
-                // Obținem textul din Header
                 string headerText = menuItem.Header.ToString();
 
                 gridSizeRow=headerText[0] -'0';
@@ -329,7 +327,6 @@ namespace memory_game
         }
       private void About_Click(object sender, RoutedEventArgs e)
         {
-            // Arată fereastra de "About"
             MessageBox.Show("Student: Balanica Stefan \nEmail: stefanbalanica22@yahoo.com\nGrupa: 10LF331\nSpecializarea: Informatica Aplicata");
         }
 
@@ -341,7 +338,7 @@ namespace memory_game
 
         private void LoadImages(int nr)
         {
-            string imagesPath="";
+            string imagesPath= @"AnimalImages";
             switch (selectedCategory)
             {
                 case "Category 1":
@@ -356,7 +353,6 @@ namespace memory_game
             }
             var imageFiles = Directory.GetFiles(imagesPath, "*.jpg").ToList();
 
-            // Verificăm dacă există suficiente imagini
             if (imageFiles.Count < nr)
             {
                 MessageBox.Show("Nu sunt suficiente imagini în folder.");
@@ -364,12 +360,10 @@ namespace memory_game
             }
 
             imagePaths.Clear();
-            imagePaths.AddRange(imageFiles.Take(nr)); // Luăm primele 8 imagini
+            imagePaths.AddRange(imageFiles.Take(nr)); 
 
-            // Fiecare imagine va apărea de două ori (pentru pereche)
             var gameImages = imagePaths.Concat(imagePaths).ToList();
 
-            // Amestecăm imaginile
             Random rand = new Random();
             gameImages = gameImages.OrderBy(x => rand.Next()).ToList();
 

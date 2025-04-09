@@ -1,0 +1,50 @@
+{
+  "PlayerName": "Andrei",
+  "TimeLeft": 170,
+  "IsTimerRunning": false,
+  "MatchedCards": [
+    11,
+    7,
+    12,
+    13
+  ],
+  "SelectedCards": [],
+  "GameImages": [
+    "ToysImages\\619NlM6yoEL._AC_UF894,1000_QL80_.jpg",
+    "ToysImages\\dino.jpg",
+    "ToysImages\\images (1).jpg",
+    "ToysImages\\images (4).jpg",
+    "ToysImages\\dino.jpg",
+    "ToysImages\\images (1).jpg",
+    "ToysImages\\images (5).jpg",
+    "ToysImages\\images (3).jpg",
+    "ToysImages\\images (2).jpg",
+    "ToysImages\\619NlM6yoEL._AC_UF894,1000_QL80_.jpg",
+    "ToysImages\\images (4).jpg",
+    "ToysImages\\images (3).jpg",
+    "ToysImages\\a-toy-jcb-in-white-background-CEB736.jpg",
+    "ToysImages\\a-toy-jcb-in-white-background-CEB736.jpg",
+    "ToysImages\\images (2).jpg",
+    "ToysImages\\images (5).jpg"
+  ],
+  "GridButtonStates": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "System.Windows.Controls.Image",
+    "System.Windows.Controls.Image",
+    "",
+    ""
+  ],
+  "GridSizeRow": 4,
+  "GridSizeCol": 4
+}
