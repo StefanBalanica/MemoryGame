@@ -1,0 +1,52 @@
+{
+  "PlayerName": "Andrei",
+  "TimeLeft": 280,
+  "IsTimerRunning": true,
+  "MatchedCards": [
+    14,
+    2
+  ],
+  "SelectedCards": [],
+  "GameImages": [
+    "FruitImages\\download (2).jpg",
+    "FruitImages\\cirese.jpg",
+    "FruitImages\\afine.jpg",
+    "FruitImages\\caise.jpg",
+    "FruitImages\\download.jpg",
+    "FruitImages\\download (1).jpg",
+    "FruitImages\\apple.jpg",
+    "FruitImages\\download (2).jpg",
+    "FruitImages\\caise.jpg",
+    "FruitImages\\cocos.jpg",
+    "FruitImages\\cirese.jpg",
+    "FruitImages\\download (1).jpg",
+    "FruitImages\\1000ppn.jpg",
+    "FruitImages\\1000ppn.jpg",
+    "FruitImages\\afine.jpg",
+    "FruitImages\\apple.jpg",
+    "FruitImages\\cocos.jpg",
+    "FruitImages\\download.jpg"
+  ],
+  "GridButtonStates": [
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "",
+    "",
+    ""
+  ],
+  "GridSizeRow": 3,
+  "GridSizeCol": 6
+}

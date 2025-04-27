@@ -36,22 +36,17 @@ namespace memory_game
         {
             if (player != null)
             {
-                // Actualizăm scorul și numărul de meciuri
                 player.Score += scoreIncrement;
                 player.MatchPlayed += matchesPlayedIncrement;
 
-                // Verifică valorile înainte de a salva
                 Console.WriteLine($"Updated Player: {player.Name} | Score: {player.Score} | Matches: {player.MatchPlayed}");
                 var index = Players.IndexOf(player);
                 if (index >= 0)
                 {
-                    // Înlocuiește obiectul vechi cu cel modificat
                     Players[index] = player;
                 }
-                // Salvăm jucătorii actualizați
                 SavePlayers();
 
-                // Notificăm UI-ul că lista de jucători s-a schimbat
                 OnPropertyChanged(nameof(Players));
             }
         }

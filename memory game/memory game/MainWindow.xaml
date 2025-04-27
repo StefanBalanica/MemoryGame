@@ -24,7 +24,7 @@
             <Button x:Name="ButtonNewUser" Content="New User" HorizontalAlignment="Left" Margin="64,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonNewUser_Click"/>
             <Button x:Name="ButtonDeleteUser" Content="Delete User" HorizontalAlignment="Left" Margin="210,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonDeleteUser_Click"/>
             <Button x:Name="ButtonPlay" Content="Play" HorizontalAlignment="Left" Margin="361,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonPlay_Click"/>
-            <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="530,372,0,0" VerticalAlignment="Top" Height="32" Width="75"/>
+            <Button x:Name="ButtonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="530,372,0,0" VerticalAlignment="Top" Height="32" Width="75" Click="ButtonCancel_Click"/>
             <Grid x:Name="NewUserGrid" Background="White" Visibility="Hidden">
                 <Label Content="Add New User" HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Height="38" Width="126" FontSize="18"/>
                 <TextBox x:Name="PlayerNameTextBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,183,0,0" Width="300" Height="25"/>

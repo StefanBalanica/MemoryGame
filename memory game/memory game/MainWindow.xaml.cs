@@ -17,9 +17,7 @@ using System.IO;
 
 namespace memory_game
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         private MainWindowViewModel viewModel;
@@ -33,9 +31,6 @@ namespace memory_game
 
         private void ButtonNewUser_Click(object sender, RoutedEventArgs e)
         {
-            /*var newPlayer = new Player("Nou", 0, "Images/lion.jpg");
-            viewModel.Players.Add(newPlayer);
-            viewModel.SavePlayers();*/
             NewUserGrid.Visibility = Visibility.Visible;
         }
 
@@ -93,16 +88,19 @@ namespace memory_game
 
         private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
-            // Verificăm dacă există un jucător selectat
             if (viewModel.SelectedPlayer == null)
             {
                 MessageBox.Show("Please select a player before starting the game.");
                 return;
             }
 
-            // Dacă există un jucător selectat, deschidem fereastra de joc
-            PlayWindow playWindow = new PlayWindow(viewModel, viewModel.SelectedPlayer); // Transmit jucătorul selectat
-            playWindow.Show(); // Folosește Show() pentru a deschide fereastra
+            PlayWindow playWindow = new PlayWindow(viewModel, viewModel.SelectedPlayer); 
+            playWindow.Show();
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
     }

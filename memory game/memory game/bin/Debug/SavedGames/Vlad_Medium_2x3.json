@@ -1,0 +1,30 @@
+{
+  "PlayerName": "Vlad",
+  "TimeLeft": 172,
+  "IsTimerRunning": false,
+  "MatchedCards": [
+    3,
+    0,
+    4,
+    5
+  ],
+  "SelectedCards": [],
+  "GameImages": [
+    "AnimalImages\\360_F_101222254_RdzPFvqZ9IX3etSaVovJd2CxBCOHOuLg.jpg",
+    "AnimalImages\\360_F_615385212_ElBlE5d8yIUzZNzOcChB2JMhLYJ15PkL.jpg",
+    "AnimalImages\\360_F_615385212_ElBlE5d8yIUzZNzOcChB2JMhLYJ15PkL.jpg",
+    "AnimalImages\\360_F_101222254_RdzPFvqZ9IX3etSaVovJd2CxBCOHOuLg.jpg",
+    "AnimalImages\\360_F_704425476_OxJ7udCBDx2rQJcSKGjaybyaPyVAxiXH.jpg",
+    "AnimalImages\\360_F_704425476_OxJ7udCBDx2rQJcSKGjaybyaPyVAxiXH.jpg"
+  ],
+  "GridButtonStates": [
+    "System.Windows.Controls.Image",
+    "",
+    "",
+    "System.Windows.Controls.Image",
+    "System.Windows.Controls.Image",
+    "System.Windows.Controls.Image"
+  ],
+  "GridSizeRow": 2,
+  "GridSizeCol": 3
+}

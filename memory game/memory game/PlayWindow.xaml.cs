@@ -138,7 +138,7 @@ namespace memory_game
             if (menuItem == null)
                 return;
 
-            menuItem.Items.Clear(); // Curățăm orice era înainte
+            menuItem.Items.Clear(); 
 
             string folderPath = "SavedGames";
             if (!Directory.Exists(folderPath))
@@ -381,8 +381,8 @@ namespace memory_game
                 {
                     var button = new Button
                     {
-                        Width = 80,
-                        Height = 80,
+                        Width = 160,
+                        Height = 160,
                         Margin = new System.Windows.Thickness(5),
                         Tag = gameImages[row * gridSizeCol + col] 
                     };

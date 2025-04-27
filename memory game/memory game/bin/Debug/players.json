@@ -12,15 +12,15 @@
     "AvatarPath": "D:\\New folder (2)\\png-clipart-2014-mercedes-benz-sprinter-van-2018-mercedes-benz-sprinter-car-mercedes-sprinter-compact-car-van-thumbnail-removebg-preview.png"
   },
   {
-    "Name": "Ion",
-    "MatchPlayed": 2,
-    "Score": 2,
-    "AvatarPath": "D:\\github\\MemoryGame\\memory game\\memory game\\bin\\Debug\\Images\\ChatGPT Image 2 apr. 2025, 18_20_31.png"
-  },
-  {
     "Name": "Vali2",
     "MatchPlayed": 3,
     "Score": 3,
     "AvatarPath": "D:\\github\\MemoryGame\\memory game\\memory game\\bin\\Debug\\Images\\png-clipart-linkedin-linkedin-thumbnail.png"
+  },
+  {
+    "Name": "Vlad",
+    "MatchPlayed": 1,
+    "Score": 1,
+    "AvatarPath": "D:\\github\\MemoryGame\\memory game\\memory game\\bin\\Debug\\Images\\ChatGPT Image 2 apr. 2025, 18_20_31.png"
   }
 ]
